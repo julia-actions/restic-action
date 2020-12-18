@@ -43,6 +43,7 @@ runs:
           --token "$INPUT_TOKEN" \
           --incremental \
           --all \
+          --fork \
           --repository "$(basename ${{ github.repository }})" \
           --as-app \
           --organization \
