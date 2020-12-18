@@ -60,8 +60,7 @@ runs:
         restic forget \
           --tag gha \
           --keep-weekly 6 \
-          --keep-monthly 12 \
-          --keep-yearly 10 \
+          --keep-monthly 12
           --prune
       shell: bash
     
