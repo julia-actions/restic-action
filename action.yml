@@ -45,6 +45,7 @@ runs:
           --all \
           --repository "$(basename ${{ github.repository }})" \
           --as-app \
+          --organization \
           ${{ github.repository_owner }}
       shell: bash
     
@@ -58,8 +59,7 @@ runs:
       run: |
         restic forget \
           --tag gha \
-          --keep-daily 7 \
-          --keep-weekly 5 \
+          --keep-weekly 6 \
           --keep-monthly 12 \
           --keep-yearly 10 \
           --prune
